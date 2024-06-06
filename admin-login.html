@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN Form</title>
+    <link rel="stylesheet" href="admin-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<div class="container">
+    <div class="company-name">
+        <a href="user-login.html">
+            <img src="logo.jpg" alt="Company Logo" class="company-logo">
+        </a>
+        <h1>TechWiseThesis</h1>
+    </div>
+    <div class="login-wrap">
+        <div class="login-html">
+            <a href="main.html">
+                <button class="exit-button"><i class="fa fa-xmark"></i></button>
+            </a>
+            <input id="tab-1" type="radio" name="tab" class="log-in" checked><label for="tab-1" class="tab">Admin Login</label>
+            <div class="login-form">
+                <div class="log-in-htm">
+                    <form action="log.php" method="post">
+                        <div class="group">
+                            <label for="login-username" class="label">Username</label>
+                            <input id="login-username" name="username" type="text" class="input" required>
+                        </div>
+                        <div class="group">
+                            <label for="login-password" class="label">Password</label>
+                            <input id="login-password" name="password" type="password" class="input" data-type="password" required>
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Log In">
+                        </div>
+                    </form>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <a href="forgot_pass.html">Forgot Password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

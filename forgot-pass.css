@@ -1,0 +1,161 @@
+body {
+    font: 600 16px/18px 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.clearfix:after, .clearfix:before {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+    display: block;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    background-image: url('b5.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.company-name {
+    width: 50%;
+    padding: 80px;
+    text-align: center;
+    display: flex; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.company-logo {
+    width: 50px; 
+    height: 50px;
+    border-radius: 20%;
+}
+
+.company-name h1 {
+    margin: 15px;
+    color: #FFFBE9;
+}
+
+.login-wrap {
+    width: 40%; 
+    margin: auto;
+    max-width: 100%; 
+    height: 70%; 
+    position: relative;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+    background: rgb(218,205,169);
+	border-radius: 20px;
+}
+
+.login-html {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 150px 70px 50px 70px;
+}
+
+.exit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #BB8E17;
+    background: none; 
+    border: none; 
+    padding: 0;
+    outline: none;
+}
+
+.exit-button:hover {
+    color: #ffffff;
+}
+
+.login-form {
+    min-height: 345px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.login-form .group {
+    margin-bottom: 15px;
+}
+
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button {
+    text-transform: uppercase;
+}
+
+
+.login-html .tab {
+    font-size: 22px;
+    padding-bottom: 20px;
+    margin: 0 auto 10px auto; 
+    display: block; 
+    width: fit-content;
+	color: #BB8E17;
+}
+
+
+.login-html .log-in,
+.login-form .group .check {
+    display: none;
+}
+
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button {
+    width: 100%;
+    color: #1E1C1A;
+    display: block;
+    font-size: 12px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.group .input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .2);
+    color: #461F1F;
+    border: none;
+    appearance: none; 
+}
+
+.group .input:focus {
+    outline: none;
+    border: 1px solid; 
+}
+
+.login-form .group .button {
+    background: #BB8E17; 
+    cursor: pointer; 
+    text-align: center; 
+    transition: background-color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px; 
+	border: none;
+}
+
+.login-form .group .button:hover {
+    background: #ffffff;
+    color: #BB8E17;
+}
