@@ -1,0 +1,267 @@
+
+
+body {
+    color: #BB8E17;
+    font: 600 16px/18px 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.clearfix:after, .clearfix:before {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+    display: block;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-image: url('b5.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.company-name {
+    width: 50%;
+    padding: 80px;
+    text-align: center;
+    display: flex; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.company-logo {
+    width: 50px; 
+    height: 50px;
+    border-radius: 20%;
+}
+
+.company-name h1 {
+    margin: 15px;
+    color: #FFFBE9;
+}
+
+.login-wrap {
+    width: 40%; 
+    margin: auto;
+    max-width: 100%; 
+    height: 80%; 
+    position: relative;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+    background:rgb(218,205,169);
+	border-radius: 20px;
+}
+
+.login-html {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 90px 70px 50px 70px;
+	
+}
+
+.exit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #BB8E17;
+    background: none; 
+    border: none; 
+    padding: 0;
+    outline: none;
+}
+
+.exit-button:hover {
+    color: #ffffff;
+}
+
+.login-form {
+    min-height: 345px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.login-html .log-in-htm,
+.login-html .sign-in-htm {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
+}
+
+.login-html .log-in:checked + .tab + .sign-in + .tab + .login-form .log-in-htm {
+    transform: rotate(0);
+}
+
+.login-html .sign-in:checked + .tab + .login-form .sign-in-htm {
+    transform: rotate(0);
+}
+
+.login-form .group {
+    margin-bottom: 15px;
+}
+
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button {
+    text-transform: uppercase;
+}
+
+.login-html .tab {
+    font-size: 22px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.login-html .log-in:checked + .tab,
+.login-html .sign-in:checked + .tab {
+    color: #1E1C1A;
+    border-color: #BB8E17;
+}
+
+.login-html .log-in,
+.login-html .sign-in,
+.login-form .group .check {
+    display: none;
+}
+
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button {
+    width: 100%;
+    color: #1E1C1A;
+    display: block;
+    font-size: 12px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.group .input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .2);
+    border: none;
+    appearance: none; 
+	
+}
+
+.group .input:focus {
+    outline: none;
+    border: 1px solid; 
+}
+
+.group .input::-ms-expand {
+    display: none; 
+}
+
+.login-form .group input[data-type="password"] {
+    text-security: circle;
+    -webkit-text-security: circle;
+}
+
+.login-form .group .button {
+    background: #BB8E17; 
+    cursor: pointer; 
+    text-align: center; 
+    transition: background-color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px; 
+	border: 0;
+}
+
+.login-form .group .button:hover {
+    background: #ffffff;
+    color: #BB8E17;
+}
+
+.hr {
+    height: 2px;
+    margin: 30px 0 10px 0;
+    background: rgba(30,28,26, .2);
+}
+
+.foot-lnk {
+    text-align: center;
+    color: #1E1C1A;
+	margin-top: 20px;
+}
+
+.foot-lnk a {
+    display: inline-block; 
+    margin-top: 10px;
+}
+.foot-lnk a:hover {
+    color: #A90F0D;
+    cursor: pointer;
+}
+
+.foot-lnk label:hover {
+    color: #BB8E17;
+    cursor: pointer;
+}
+
+.login-form .group select {
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .2);
+    border: none;
+    appearance: none;
+}
+.login-form .group  option {
+   color: #000;
+}
+.login-form .group select:focus {
+    outline: none;
+    border: 1px solid;
+	
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .company-name {
+        width: 100%; 
+        padding: 40px; 
+        text-align: center; 
+    
+    }
+
+    .login-wrap {
+        width: 80%; 
+        margin-bottom: 20px; 
+    }
+
+    .login-html {
+        padding: 50px;
+    }
+}
