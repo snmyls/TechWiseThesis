@@ -10,22 +10,22 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 20px;
-    background-color: #441C04; 
+    background-color: #eae7dd; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .company-name {
     font-size: 30px;
     font-weight: bold;
-    color: #ffffff; 
+    color: #323232; 
 }
 .fas.fa-user {
-  color: #fff; 
+  color: #323232; 
   font-size: 24px; 
   position: relative; 
   margin-right:10px;
 }
 .fas.fa-user:hover {
-  color: #B3613B; 
+  color: #BFA181; 
 }
 .fas.fa-user::after {
   content: "Register";
@@ -55,12 +55,12 @@ header {
 }
 
 .navigation a:hover {
-    color: #BB8E17; 
+    color: #BFA181; 
 }
 
 .navigation a.active {
     font-weight: bold;
-    color: #BB8E17; 
+    color: #BFA181; 
 }
 
 main {
@@ -188,7 +188,7 @@ main {
 }
 
 section img {
-    width: 500px;
+   width: 500px;
     height: 550px;
 	padding-top: 40px;
     object-fit: cover;
@@ -293,8 +293,8 @@ section.company-info p {
 .feedback {
     width: calc(20% - 20px); 
     margin-bottom: 20px;
-    background-color: #441C04; 
-    border: 1px solid #441C04; 
+    background-color: #eae7dd; 
+    border: 1px solid #eae7dd; 
     padding: 10px;
     box-sizing: border-box;
     border-radius: 30px; 
@@ -305,18 +305,18 @@ section.company-info p {
 }
 .feedback h3 {
     font-size: 18px;
-    color: #fff; 
+    color: #9C6434; 
     margin-bottom: 10px;
 }
 .feedback p {
     font-size: 14px;
-    color: #fff; 
+    color: #000; 
     line-height: 1.6;
 }
 
 
 footer {
-    background-color: #844424; 
+    background-color: #4c4b42; 
     color: #fff; 
     padding: 50px;
     text-align: center;
@@ -346,18 +346,18 @@ footer {
 .company-name-1 {
     font-size: 30px;
     margin: 0;
-    color: #F5F5DC; 
+    color: #fff; 
 }
 .company-contact, .company-phone, .company-email {
     margin: 0;
     padding-top: 30px;
-    color: #F5F5DC; 
+    color: #fff; 
 }
 .footer-text {
     text-align: left;
     padding-right: 70px; 
     line-height: 1.5;
-    color: #F5F5DC;
+    color: #fff;
 }
 .footer-nav {
     padding-left: 600px;
@@ -367,8 +367,86 @@ footer {
     padding-top: 30px;
     flex-basis: 100%; 
     margin: 0 auto; 
-    border-top: 1px solid #F5F5DC; 
+    border-top: 1px solid #fff; 
     text-align: center; 
     position: relative;
-    color: #F5F5DC; 
+     color: #fff; 
+}
+
+@media only screen and (max-width: 768px) {
+    .main-content {
+        padding: 40px;
+    }
+    
+    section img {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+    }
+    
+    section.company-info {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+     .user-feedback {
+        padding: 20px;
+        margin-top: 10px;
+    }
+    
+    .feedback {
+        width: calc(100% - 20px);
+    }
+    .footer-nav {
+        padding-left: 0;
+        padding-bottom: 10px;
+    }
+    
+    .rights-reserved {
+        padding-top: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0; 
+    }
+
+    .icon-button, .icon-text {
+        margin-bottom: 15px;
+    }
+
+    .footer-text {
+        padding-right: 0; 
+        text-align: center; 
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .user-feedback {
+        padding: 20px;
+        margin-top: 10px;
+    }
+    
+    .feedback {
+        width: calc(45% - 20px);
+    }
+    
+    .footer {
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+     .user-feedback {
+        padding: 30px;
+        margin-top: 20px;
+    }
+    
+    .feedback {
+        width: calc(20% - 30px);
+    }
+    .footer {
+        padding: 50px;
+    }
 }
