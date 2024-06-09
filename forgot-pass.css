@@ -22,7 +22,7 @@ body {
     height: 100vh;
     margin: 0;
     display: flex;
-    background-image: url('b5.jpg'); 
+    background-image: url('b8.jpg'); 
     background-size: cover;
     background-position: center;
 }
@@ -50,18 +50,18 @@ body {
     width: 40%; 
     margin: auto;
     max-width: 100%; 
-    height: 70%; 
+    height: 60%; 
     position: relative;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
-    background: rgb(218,205,169);
+    background: #5F371E;
 	border-radius: 20px;
 }
 
 .login-html {
     width: 100%;
-    height: 100%;
+    height: 50%;
     position: absolute;
-    padding: 150px 70px 50px 70px;
+    padding: 100px 70px 50px 70px;
 }
 
 .exit-button {
@@ -70,7 +70,7 @@ body {
     right: 10px;
     font-size: 24px;
     cursor: pointer;
-    color: #BB8E17;
+    color: #BA7E3B;
     background: none; 
     border: none; 
     padding: 0;
@@ -105,7 +105,7 @@ body {
     margin: 0 auto 10px auto; 
     display: block; 
     width: fit-content;
-	color: #BB8E17;
+	color: #BA7E3B;
 }
 
 
@@ -118,7 +118,7 @@ body {
 .login-form .group .input,
 .login-form .group .button {
     width: 100%;
-    color: #1E1C1A;
+    color: #fff;
     display: block;
     font-size: 12px;
 }
@@ -144,7 +144,7 @@ a {
 }
 
 .login-form .group .button {
-    background: #BB8E17; 
+    background: #B58158; 
     cursor: pointer; 
     text-align: center; 
     transition: background-color 0.3s ease;
@@ -157,8 +157,12 @@ a {
 
 .login-form .group .button:hover {
     background: #ffffff;
-    color: #BB8E17;
+    color: #B58158;
 }
+
+
+
+
 @media only screen and (max-width: 768px) {
     .container {
         flex-direction: column;
