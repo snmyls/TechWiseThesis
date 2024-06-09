@@ -1,7 +1,7 @@
 
 
 body {
-    color: #BB8E17;
+    color: #BA7E3B;
     font: 600 16px/18px 'Times New Roman', Times, serif;
     overflow: hidden;
 }
@@ -26,7 +26,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    background-image: url('b5.jpg'); 
+    background-image: url('b8.jpg'); 
     background-size: cover;
     background-position: center;
 }
@@ -57,7 +57,7 @@ body {
     height: 80%; 
     position: relative;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
-    background:rgb(218,205,169);
+    background:#5F371E;
 	border-radius: 20px;
 }
 
@@ -75,7 +75,7 @@ body {
     right: 10px;
     font-size: 24px;
     cursor: pointer;
-    color: #BB8E17;
+    color: #BA7E3B;
     background: none; 
     border: none; 
     padding: 0;
@@ -135,8 +135,8 @@ body {
 
 .login-html .log-in:checked + .tab,
 .login-html .sign-in:checked + .tab {
-    color: #1E1C1A;
-    border-color: #BB8E17;
+    color: #fff;
+    border-color: #BA7E3B;
 }
 
 .login-html .log-in,
@@ -149,13 +149,13 @@ body {
 .login-form .group .input,
 .login-form .group .button {
     width: 100%;
-    color: #1E1C1A;
+    color: #fff;
     display: block;
     font-size: 12px;
 }
 
 a {
-    color: inherit;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -184,7 +184,7 @@ a {
 }
 
 .login-form .group .button {
-    background: #BB8E17; 
+    background: #B58158; 
     cursor: pointer; 
     text-align: center; 
     transition: background-color 0.3s ease;
@@ -196,8 +196,8 @@ a {
 }
 
 .login-form .group .button:hover {
-    background: #ffffff;
-    color: #BB8E17;
+    background: #DFCCBB;
+    color: #5F371E;
 }
 
 .hr {
@@ -208,7 +208,7 @@ a {
 
 .foot-lnk {
     text-align: center;
-    color: #1E1C1A;
+    color: #fff;
 	margin-top: 20px;
 }
 
@@ -222,7 +222,7 @@ a {
 }
 
 .foot-lnk label:hover {
-    color: #BB8E17;
+    color: #BA7E3B;
     cursor: pointer;
 }
 
