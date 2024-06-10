@@ -26,7 +26,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    background-image: url('b8.jpg'); 
+    background-image: url('image/b8.jpg'); 
     background-size: cover;
     background-position: center;
 }
@@ -42,7 +42,7 @@ body {
 .company-logo {
     width: 50px; 
     height: 50px;
-    border-radius: 20%;
+    border-radius: 100%;
 }
 
 .company-name h1 {
@@ -179,7 +179,7 @@ a {
 }
 
 .login-form .group input[data-type="password"] {
-    text-security: circle;
+    input-security: circle;
     -webkit-text-security: circle;
 }
 
