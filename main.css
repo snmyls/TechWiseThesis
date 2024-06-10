@@ -8,15 +8,29 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
-    background-color: #221C1C; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 50px;
+    background-color: #734122; 
 }
+
 .company-name {
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff; 
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    display: flex; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
+
+.company-logo {
+    width: 50px; 
+    height: 50px;
+    border-radius: 100%;
+}
+
+.company-name h2 {
+    margin: 15px;
+    color: #FFFBE9;
+}
+
 .fas.fa-user {
   color: #fff; 
   font-size: 24px; 
@@ -24,7 +38,7 @@ header {
   margin-right:10px;
 }
 .fas.fa-user:hover {
-  color:#F4DB7D; 
+  color:#BB8463; 
 }
 .fas.fa-user::after {
   content: "Register";
@@ -147,7 +161,7 @@ main {
     bottom: 20px; 
     left: 0;
     color: #000;
-    font-size: 20px;
+    font-size: 15px;
     width: auto;
 	
 }
@@ -160,12 +174,11 @@ main {
     display: block; 
     color: #000;
     text-decoration: none; 
-    margin-top: 5px; 
+    margin-top: 15px; 
 }
 
 .caption a:hover {
-    text-decoration: underline; 
-	color: #FF6A3D;
+	color: #734122;
 }
 
 ::-webkit-scrollbar {
