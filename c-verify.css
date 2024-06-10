@@ -22,7 +22,7 @@ body {
     height: 100vh;
     margin: 0;
     display: flex;
-    background-image: url('b5.jpg'); 
+    background-image: url('image/b5.jpg'); 
     background-size: cover;
     background-position: center;
 }

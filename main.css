@@ -63,7 +63,7 @@ header {
 }
 
 main {
-    background-image: url('b9.jpeg');
+    background-image: url('image/b9.jpeg');
     height: 600px;
     position: relative;
     background-size: cover;
