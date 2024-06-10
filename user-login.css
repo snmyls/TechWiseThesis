@@ -179,7 +179,7 @@ a {
 }
 
 .login-form .group input[data-type="password"] {
-    text-security: circle;
+    input-security: circle;
     -webkit-text-security: circle;
 }
 
