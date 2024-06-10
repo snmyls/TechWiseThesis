@@ -32,7 +32,7 @@ html, body {
     left: 0;
     top: 0;
     width: 220px;
-    height: calc(100% - 50px);
+    height: calc(100% - 40px);
     background-color: #734122;
     border-right: 1px solid #ccc;
     z-index: 1000;
