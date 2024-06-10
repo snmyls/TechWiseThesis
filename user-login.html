@@ -16,6 +16,8 @@
             </a>
             <h1>TechWiseThesis</h1>
         </div>
+
+        <!--//////////LOG IN////////////////-->
     <div class="login-wrap">
         <div class="login-html">
             <a href="main.html">
@@ -25,9 +27,9 @@
             <input id="tab-2" type="radio" name="tab" class="sign-in"><label for="tab-2" class="tab">Sign Up</label>
             <div class="login-form">
                 <div class="log-in-htm">
-                    <form action="log.php" method="post">
+                    <form action="user-login.php" method="POST">
                         <div class="group">
-                            <label for="login-username" class="label">Username / Email Address</label>
+                            <label for="login-username" class="label">Username</label>
                             <input id="login-username" name="username" type="text" class="input" required>
                         </div>
                         <div class="group">
@@ -35,7 +37,7 @@
                             <input id="login-password" name="password" type="password" class="input" data-type="password" required>
                         </div>
                         <div class="group">
-                            <input type="submit" class="button" value="Log In">
+                            <input type="submit" class="button" value="Log In" name = "submitBtn">
                         </div>
                     </form>
                     <div class="hr"></div>
@@ -44,8 +46,9 @@
                     </div>
                 </div>
 				
+                <!--//////////SIGN UP////////////////-->
                <div class="sign-in-htm">
-                    <form action="register.php" method="post"> 
+                    <form action="user-login.php" method="post"> 
                         <div class="group">
                             <label for="register-username" class="label">Username</label>
                             <input id="register-username" name="username" type="text" class="input" required>
@@ -53,10 +56,6 @@
                         <div class="group">
                             <label for="register-password" class="label">Password</label>
                             <input id="register-password" name="password" type="password" class="input" data-type="password" required>
-                        </div>
-                        <div class="group">
-                            <label for="email" class="label">Email</label>
-                            <input id="email" name="email" type="email" class="input" required>
                         </div>
                         <div class="group">
                             <input type="submit" class="button" value="Sign Up">
