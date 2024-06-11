@@ -8,15 +8,29 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
-    background-color: #221C1C; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px 50px;
+    background-color: #734122; 
 }
+
 .company-name {
-    font-size: 30px;
-    font-weight: bold;
-    color: #ffffff; 
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
+
+.company-logo {
+    width: 100px; 
+    height: 100px;
+    border-radius: 100%;
+}
+
+.company-name h2 {
+    margin: 20px;
+    color: #FFFBE9;
+}
+
 .fas.fa-user {
   color: #fff; 
   font-size: 24px; 
@@ -24,7 +38,7 @@ header {
   margin-right:10px;
 }
 .fas.fa-user:hover {
-  color: #F4DB7D; 
+  color:#BB8463; 
 }
 .fas.fa-user::after {
   content: "Register";
@@ -39,7 +53,6 @@ header {
 .fas.fa-user:hover::after {
   display: block; 
 }
-
 .navigation {
     display: flex;
     justify-content: center;
