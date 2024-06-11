@@ -1,0 +1,210 @@
+html, body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCFCF4;
+    scroll-behavior: smooth;
+}
+
+.company-name {
+    width: 50%;
+    padding: 50px -1px;
+    text-align: center;
+    display: flex; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    align-items: center;
+}
+
+.company-logo {
+    width: 50px; 
+    height: 50px;
+    border-radius: 100%;
+}
+
+.company-name h2 {
+    margin: 8px;
+    color: #FFFBE9;
+    font-size: 20px;
+}
+
+.side-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: calc(100% - 40px);
+    background-color: #734122;
+    border-right: 1px solid #ccc;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.user-info {
+    background-color: #BB8463;
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.user-info img.user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info .username {
+    color: #333;
+    font-size: 18px;
+}
+
+.side-panel ul {
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 0;
+}
+
+.side-panel ul li {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.side-panel a {
+    text-decoration: none; 
+    color: #ffffff; 
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+.side-panel a.active {
+    font-weight: bold;
+    color: #D9BBA1; 
+}
+
+.side-panel ul li a:hover {
+    color: #D9BBA1; 
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+.profile-upload {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#fileInput {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.profile-upload .username {
+    display: block;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 1200px) {
+    .side-panel {
+        width: 200px;
+    }
+    .main-content {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 992px) {
+    .side-panel {
+        width: 180px;
+    }
+    .main-content {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-panel {
+        width: 160px;
+    }
+    .main-content {
+        margin-left: 180px;
+    }
+    .company-name h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .side-panel {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main-content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+    .profile-upload {
+        margin-top: 10px;
+    }
+    .company-logo {
+        width: 40px;
+        height: 40px;
+    }
+    .user-info img.user-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .side-panel {
+        padding: 10px;
+    }
+    .company-name h2 {
+        font-size: 16px;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+    .company-logo {
+        width: 30px;
+        height: 30px;
+    }
+    .user-info img.user-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
