@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Home</title>
+    <link rel="stylesheet" href="User-Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="side-panel">
+        <div class="company-name">
+            <a href="#">
+                <img src="logo.png" alt="Company Logo" class="company-logo">
+            </a>
+            <h2>TechWiseThesis</h2>
+        </div>
+        <div class="user-info">
+            <i class="fas fa-user"></i>
+            <span class="username">User</span>
+        </div>
+        <ul>
+            <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Account Settings</a></li>
+            <li><a href="user-login.html"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+            <hr>
+            <li><a href="User-Library.html"><i class="fas fa-book"></i> Library</a></li>
+        </ul>
+    </div>
+    <div class="header-actions">
+        <input type="text" class="search-bar" placeholder="Search...">
+        <button class="upload-button"><i class="fas fa-upload"></i> Upload</button>
+    </div>
+    <div class="main-content">
+        <div class="slider"> 
+            <p>Upload Files:</p>
+            <button class="nav-btn prev">&#10094;</button>
+            <div class="content-container">
+                <div class="content-item">
+                    <div class="content-details">
+                        <a href="link.html">Factors Concerning Animal Growth</a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-details">
+                        <a href="link.html">Are Technology Improvements Contractionary?</a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-details">
+                        <a href="link.html">Economic Impacts of Artificial Intelligence: An In-depth Analysis</a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-details">
+                        <a href="link.html">Factors Concerning Animal Growth</a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-details">
+                        <a href="link.html">Are Technology Improvements Contractionary?</a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-details">
+                        <a href="link.html">Economic Impacts of Artificial Intelligence: An In-depth Analysis</a>
+                    </div>
+                </div>
+            </div>
+            <button class="nav-btn next">&#10095;</button>
+        </div>
+        
+        <div class="slider"> 
+            <p>Recently:</p>
+            <button class="nav-btn prev">&#10094;</button>
+            <div class="content-container">
+                <div class="content-item">
+                    <div class="content-details">
+                        <a href="link.html">Link Title</a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-details">
+                        <a href="link.html">Link Title</a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-details">
+                        <a href="link.html">Link Title</a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-details">
+                        <a href="link.html">Link Title</a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-details">
+                        <a href="link.html">Link Title</a>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-details">
+                        <a href="link.html">Link Title</a>
+                    </div>
+                </div>
+            </div>
+            <button class="nav-btn next">&#10095;</button>
+        </div>
+    </div>
+  
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sliders = document.querySelectorAll(".slider");
+
+            sliders.forEach(function(slider) {
+                const contentContainer = slider.querySelector(".content-container");
+                const prevButton = slider.querySelector(".prev");
+                const nextButton = slider.querySelector(".next");
+
+                const scrollAmount = 300; // Adjust as needed
+
+                prevButton.addEventListener("click", function () {
+                    contentContainer.scrollLeft -= scrollAmount;
+                });
+
+                nextButton.addEventListener("click", function () {
+                    contentContainer.scrollLeft += scrollAmount;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
